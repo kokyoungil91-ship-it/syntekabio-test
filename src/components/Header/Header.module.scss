@@ -1,0 +1,56 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  overflow-x: hidden; // 🔥 혹시 모를 오버플로우 차단
+}
+
+.leftMenu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.leftMenu nav a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.rightMenu {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.loginBtn {
+  padding: 6px 14px;
+  background: #000;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+@media (max-width: 430px) {
+  .header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .leftMenu {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .leftMenu nav a {
+    font-size: 14px;
+  }
+}
